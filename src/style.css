@@ -1,0 +1,127 @@
+:root {
+  --bg: #edf1f4;
+  --dark: rgba(0, 0, 0, 0.1);
+  --light: #fffb;
+  --text-dark: #001e3e;
+  --text-light: #2c445f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+
+.login {
+  position: relative;
+  width: 38rem;
+  padding: 8rem 5rem 5rem;
+  border-radius: 2rem;
+  box-shadow: 15px 15px 20px var(--dark), -15px -15px 20px var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login form {
+  position: relative;
+  width: 100%;
+}
+
+.login form h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.login form h2 span {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.login form .inputBox {
+  position: relative;
+  display: flex;
+}
+
+.login form .inputBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"] {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  padding-left: 4rem;
+  border-radius: 1rem;
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px var(--light);
+}
+
+.login form .inputBox i {
+  position: absolute;
+  left: 2rem;
+  top: 25%;
+}
+
+.login form label {
+  display: flex;
+  align-items: center;
+}
+
+.login form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.login form input[type="submit"] {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px var(--light);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login form input[type="submit"]:focus {
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px var(--light);
+}
+
+.login .fingerPrint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.login .fingerPrint .fingerPrintBox {
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px var(--light);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 3px solid var(--bg);
+  font-weight: 500;
+}
+
+.login .fingerPrint .fingerPrintBox i {
+  font-size: 5rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo Firebase Web-Mobile App</title>
+  </head>
+  <body>
+    <div class="login">
+      <form action="">
+        <h2>Hello!<br /><span>Welcome back!</span></h2>
+        <div class="inputBox">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="inputBox">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <label for="check">
+          <input type="checkbox" name="check" id="check" /> Keep me login
+        </label>
+        <div class="inputBox">
+          <input type="submit" value="Log in" id="username" />
+        </div>
+      </form>
+      <h4>OR</h4>
+      <div class="fingerPrint">
+        <div class="fingerPrintBox">
+          <i class="fa-solid fa-fingerprint"></i>
+        </div>
+        <p>Login with fingerPrint</p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
